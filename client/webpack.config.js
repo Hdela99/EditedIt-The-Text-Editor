@@ -30,8 +30,8 @@ module.exports = () => {
         description: 'Takes notes with JS syntax highlighting',
         background_color:'#255ca3',
         theme_color: '#255ca3',
-        start_url:'/',
-        publicPath:'/',
+        start_url:'./',
+        publicPath:'./',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -40,8 +40,8 @@ module.exports = () => {
           }
         ]
       }),
-      new InjectManifest.GenerateSW({
-        swSrc: '//src-sw-js',
+      new InjectManifest({
+        swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       })
     ],
@@ -50,8 +50,7 @@ module.exports = () => {
       rules: [
         {
           test: /\.css$/i,
-          use: ['style-loader',
-          'css-loader'],
+          use: ['style-loader','css-loader'],
         },
         {
           test: /\.m?js$/,
