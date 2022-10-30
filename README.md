@@ -1,5 +1,5 @@
 
-# Thoughts And Bots
+# Just Another Text Editor
 
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
